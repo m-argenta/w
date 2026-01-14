@@ -113,8 +113,8 @@ html {
 body {
   background: #292929;
    	font-family: "Inter", sans-serif;
-  	font-size: 17px;
-  	line-height: 0.8;
+  	font-size: 16px;
+  	line-height: 0.8 !important;
   	margin: 0px !important;
 }
 
@@ -123,7 +123,9 @@ body {
 }
 
 #passages {
-  	max-width: 500px;
+    margin: 0px !important;
+    max-width: 400px;
+  	border-width: 100%;
   	border: 3px solid white;
   	background-color: #292929;
   	padding-left: 20px;
@@ -170,29 +172,29 @@ $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1"
     &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
 
-&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&gt;&lt;&lt;nobr&gt;&gt;
 	&lt;&lt;if $itemsExplained is true&gt;&gt;
     [[Hello! What&#39;s currently on sale?|onSale]]
     &lt;&lt;else&gt;&gt;
     [[Hello!|onSale]]
     &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
-&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&gt;&lt;&lt;nobr&gt;&gt;
 	&lt;&lt;if $secretOut is true&gt;&gt;
     [[Can you save a sticker for me?|request]]
     &lt;&lt;else&gt;&gt;
     [[What is this place?|storeProject]]
     &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
-&gt;&gt;&lt;&lt;nobr&gt;&gt;
+&gt;&lt;&lt;nobr&gt;&gt;
 	&lt;&lt;if $knowsMe is true&gt;&gt;
     [[Do you have an instagram?|socials]]
     &lt;&lt;else&gt;&gt;
     [[Who are you?|aboutMe]]
     &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
-&gt;&gt;[[I&#39;m just browsing|noProblem]]
-&gt;&gt;[[I have a discount code|discountCode]]</tw-passagedata><tw-passagedata pid="2" name="onSale" tags="" position="2800,900" size="100,100">I&#39;m currently selling a $itemA, a $itemB and a $itemC .
+&gt;[[I&#39;m just browsing|noProblem]]
+&gt;[[I have a discount code|discountCode]]</tw-passagedata><tw-passagedata pid="2" name="onSale" tags="" position="2800,900" size="100,100">I&#39;m currently selling a $itemA, a $itemB and a $itemC .
 
 &gt;&gt;&lt;&lt;link &quot;What can you tell me about the $itemA ?&quot; &quot;explainA&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &gt;&gt;&lt;&lt;link &quot;I might need a $itemB in my life...&quot; &quot;explainB&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
